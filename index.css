@@ -19,7 +19,7 @@ body{
 }
 header{
     background: white;
-    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05); */
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
 }
 .head-container{
     height: 100px;
@@ -73,7 +73,7 @@ header{
 /* navber create complete */
 .section-container{
     width: 100%;
-    /* background-image: url('./images/Group\ 14.png'); */
+    background-image: url('./images/Group\ 14.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -98,7 +98,12 @@ header{
 .text-style-title{
     font-size: 70px;
     margin-bottom: 20px;
-    color: #F948B2;
+    background-image: linear-gradient(#F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.circle-control{
+    font-size: 15px;
 }
 .span-boll{
     border-radius: 50px;
@@ -127,8 +132,8 @@ header{
 /* banner section create complete */
 .optional-section{
     width: 100%;
-    /* background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%); */
-    /* background-image: url('./images/Group\ 14.png'); */
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    background-image: url('./images/Group\ 14.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -200,14 +205,12 @@ header{
 .over-style-img{
     width: 50px;
     margin-bottom: 20px;
+    border-radius: 50%;
 }
 .main-section-title{
     font-size: 45px;
     text-align: center;
     margin-top: 80px;
-}
-.main-style-title{
-
 }
 .main-section-pra{
     text-align: center;
@@ -220,6 +223,14 @@ header{
     width: 280px;
     height: 430px;
 }
+
+/* .card-style{
+
+}
+.image-overly{
+
+} */
+
 .card-img-control{
     width: 100%;
 }
@@ -429,7 +440,7 @@ header{
     .head-container .navbar > ul,
     .optional,
     .main-box,
-    
+    .main-section-containe,
     .main-section-containe-optional,
     .optional-careers-container
     {
@@ -440,9 +451,7 @@ header{
     .main-section-containe-optional{
         margin-bottom: 50px;
     }
-    .main-section-containe{
-        display: none;
-    }
+
     .icon-text-style,
     .icon-text-style-arreund
     {
@@ -451,56 +460,58 @@ header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 30px;
+        /* gap: 15px; */
+    }
+    .responsive-hide-control{
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 
     /* optional careers section responsive */
     .optional-careers-text{
         width: 100%;
-        
     }
     .optional-careers-image{
         width: 100%;
     }
     .optional-careers-text-title{
         padding-top: 40px;
+        text-align: center;
+    }
+    .opntiona-lcareers-pragrap{
+        text-align: center;
     }
     .optional-careers-image-controal{
         margin: 0;
         width: 100%;
+        padding-left: 25px;
     }
     .optional-background-control{
         margin: 0;
         width: 100%;
     }
-
-
      /* optional careers section responsive */
+    .main-section-containe{
 
-
-    /* .main-section-containe{
-        width: 100%;
-        margin: 0;
-        flex-direction: column;
-        display: ;
     }
     .main-section-con-tex{
-        width: 0%;
+        width: 100%;
     }
     .main-section-con-imag{
-        width: 100%;
+        width: 70%;
+        margin-top: 30px;
     }
     .main-section-con-img-contro{
         width: 100%;
     }
-    .main-section-containe{
-        width: 0;
-        margin-right: 0;
-    }
     .img-up-contro{
-        display: none;
-        margin: 0;
-    } */
-
+        width: 100%;
+    }
+    .main-control-img-styl{
+        width: 60%;
+        margin-left: 70px;
+        margin-top: 120px;
+    }
     /* optional section responsive */
 
     .main-section-con-img-control-optiona{
@@ -564,7 +575,9 @@ header{
     }
     .footer-container{
         margin-top: 50px;
+        /* width: 100%; */
     }
+   
 }
 /* Responsive tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -598,6 +611,9 @@ header{
     }
     .optional-careers-container{
         width: 100%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin: 0;
     }
     .optional-background-control{
         width: 100%;
@@ -605,11 +621,34 @@ header{
     .optional-careers-text{
         width: 100%;
     }
+    .optional-careers-instractor{
+        width: 100%;
+    }
     .optional-careers-image{
         width: 100%;
     }
-    
+    .optional-careers-image-controal{
+        width: 100%;
+    }
+    /* footer responsive section */
+
     .footer-container{
+        width: 100%;
+        /* margin: 0; */
+    }
+    .navbar-footer{
+        width: 100%;
+    }
+    .footer-icon{
+
+    }
+    .navbar-footer{
+        width: 100%;
+    }
+    .small-footer-text{
+        width: 100%;
+    }
+    footer{
         width: 100%;
     }
 }
